@@ -34,7 +34,35 @@ body {
   }
 
   .top_menu nav a {
-    padding-right: 10px;
+    padding: 14px;
     margin-left: 40px;
-    
+    }
+  
+  .top_menu nav a:hover {
+    padding: 14px;
+    margin-left: 40px;
+    background: #b68877;
+  }
+
+  .home_card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #919b95;
+    background-image: url('photos/backHome11.jpg');
+
+  }
+  h1{
+    font-size: 50px;
+    text-align: center;
+
+  }
+  h1 b{
+    font-size: 70px;
+    color: #b6beb9;
+
+  }
+ img{
+    width: auto;
+    height: 592px;
   }
