@@ -11,7 +11,7 @@ body {
 
 .top_header {
     background: #d2a48e;
-    position: static;
+    position: sticky;
   }
 
   .top_menu {
@@ -48,21 +48,79 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #919b95;
+    background: #5c6962;
     background-image: url('photos/backHome11.jpg');
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 
   }
   h1{
-    font-size: 50px;
+    font-size: 65px;
     text-align: center;
 
   }
   h1 b{
-    font-size: 70px;
+    font-size: 75px;
     color: #b6beb9;
 
   }
  img{
+     border-radius: 6px;
     width: auto;
-    height: 592px;
+    max-height: 700px;
   }
+
+  .interes{
+      padding-top: 25px;
+      margin-top: auto;
+    background: #755b6e;
+    padding-bottom: 20px;
+  }
+  .cards_position{
+      display: flex;
+      justify-content: first baseline;
+      flex-wrap: wrap;
+      
+  }
+  h2{
+    font-size: 43px;
+    text-align: center;
+    color: #e5c7b3;
+  }
+  h4{
+    font-size: 30px;
+    text-align: center;
+    color: #bea8a8;
+  }
+
+  .card{
+      background-color: #ddd2d2;
+      padding: 10px;
+      text-align: center;
+      margin: 30px;
+      border-radius: 7px;
+      box-shadow: 0 35px 35px -20px rgb(0 0 0 / 20%);
+  }
+
+  .card:hover {
+    background-color: #9cb4ac;
+    padding: 10px;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 0 35px 35px -20px rgb(0 0 0 / 20%);
+    text-decoration-color: #b6beb9;
+}
+h3{
+text-align: center;
+font-size: x-large;
+
+}
+
+p{
+    margin: auto;
+    text-align: center;
+    width: 310px;
+    font-size: x-large;
+
+}
