@@ -2,7 +2,7 @@
 body {
     margin: auto;
     background: #bea8a8;
-    max-width:  1680px;;
+    max-width:  1680px;
   }
   a{
     text-decoration: none;
@@ -11,15 +11,23 @@ body {
 
 .top_header {
     background: #d2a48e;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    max-width: 1680px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    
+    
   }
 
   .top_menu {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    max-width: 1820px;
+    max-width: 1700px;
     padding: 0 30px;
+    height: 100%;
   }
 
   .top_menu > div {
@@ -50,7 +58,7 @@ body {
     align-items: center;
     background: #5c6962;
     background-image: url('photos/backHome11.jpg');
-    padding: 0px;
+    padding: 80px 0 0;
     box-sizing: border-box;
     flex-wrap: wrap;
 
@@ -72,8 +80,10 @@ body {
   }
 
   .interes{
-      padding-top: 25px;
+      padding-top: 35px;
       margin-top: auto;
+      margin: 0;
+      height: 100%;
     background: #755b6e;
     padding-bottom: 20px;
   }
@@ -91,7 +101,7 @@ body {
   h4{
     font-size: 30px;
     text-align: center;
-    color: #bea8a8;
+    color: #927e7e;
   }
 
   .card{
@@ -124,3 +134,39 @@ p{
     font-size: x-large;
 
 }
+.projects 
+{background-color: #5c6962;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.skill:hover {
+    background-color: #eeeada;
+    padding: 10px;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 0 35px 35px -20px rgb(0 0 0 / 20%);
+    text-decoration-color: #b6beb9;
+}
+.skills_icon a{
+   margin-left: 20px;
+   flex-wrap: wrap;
+}
+.work{
+   box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.github *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.github a{
+    border-bottom: #58b483;
+}
+
+ 
