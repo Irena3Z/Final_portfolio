@@ -2,21 +2,24 @@
 body {
     margin: auto;
     background: #bea8a8;
-    max-width:  1680px;
+    max-width:  1440px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   a{
     text-decoration: none;
     color: black;
+    
   }
 
 .top_header {
     background: #d2a48e;
     position: fixed;
     width: 100%;
-    max-width: 1680px;
+    max-width: 1440px;
     margin: auto;
     text-align: center;
     box-sizing: border-box;
+    
     
     
   }
@@ -25,7 +28,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    max-width: 1700px;
+    max-width: 1440px;
     padding: 0 30px;
     height: 100%;
   }
@@ -44,6 +47,7 @@ body {
   .top_menu nav a {
     padding: 14px;
     margin-left: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
   
   .top_menu nav a:hover {
@@ -51,32 +55,42 @@ body {
     margin-left: 40px;
     background: #b68877;
   }
-
+  header{
+    padding-top: 50px;
+  }
   .home_card{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #5c6962;
     background-image: url('photos/backHome11.jpg');
+    margin:0 auto;
     padding: 80px 0 0;
     box-sizing: border-box;
     flex-wrap: wrap;
+    max-width: 1440px;
+
 
   }
   h1{
-    font-size: 65px;
+
+    font-size: 45px;
     text-align: center;
 
   }
   h1 b{
-    font-size: 75px;
+    font-size: 55px;
     color: #b6beb9;
 
   }
- img{
+  .home_card img{
      border-radius: 6px;
     width: auto;
-    max-height: 700px;
+    max-height: 500px;
+  }
+
+  section{
+    max-width: 1440px;
   }
 
   .interes{
@@ -89,48 +103,51 @@ body {
   }
   .cards_position{
       display: flex;
-      justify-content: first baseline;
+      justify-content: center;
       flex-wrap: wrap;
       
   }
   h2{
-    font-size: 43px;
+    font-size: 23px;
     text-align: center;
     color: #e5c7b3;
   }
   h4{
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
-    color: #927e7e;
+    color: #E7E39D;
   }
 
   .card{
       background-color: #ddd2d2;
-      padding: 10px;
+      padding: 7px;
       text-align: center;
-      margin: 30px;
+      margin: 20px;
       border-radius: 7px;
       box-shadow: 0 35px 35px -20px rgb(0 0 0 / 20%);
   }
 
   .card:hover {
     background-color: #9cb4ac;
-    padding: 10px;
+    padding: 7px;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     box-shadow: 0 35px 35px -20px rgb(0 0 0 / 20%);
     text-decoration-color: #b6beb9;
 }
+.card img{
+  max-width: 350px;
+}
 h3{
 text-align: center;
-font-size: x-large;
+font-size: 17px;
 
 }
 
 p{
     margin: auto;
     text-align: center;
-    width: 310px;
+    width: 210px;
     font-size: x-large;
 
 }
@@ -168,5 +185,61 @@ p{
 .github a{
     border-bottom: #58b483;
 }
+.lastone{
+  text-align: center;
+}
 
- 
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: #c29686;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #8750a7;
+
+  color: white;
+  padding: 12px 70px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+.container {
+  border-radius: 5px;
+  background-color: #b68877;
+  padding: 20px;
+}
+.col-25 {
+  float: center;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
